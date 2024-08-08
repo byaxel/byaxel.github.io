@@ -1,0 +1,261 @@
+@media screen and (min-width: 2560px) {
+    section {
+      max-width: 1400px;
+    }
+  
+    .section-container {
+      max-width: 1400px;
+      gap: 6rem;
+    }
+  
+    
+    /* PROFILE SECTION */
+    #profile {
+      height: 84vh;
+    }
+  
+    .profile-pic-container {
+      height: 550px;
+      width: 550px;
+    }
+  
+  
+    /* ABOUT SECTION */
+    .about-pic-container {
+      height: 500px;
+      width: 500px;
+    }
+  
+  
+    /* PROJECTS SECTION */
+    .project-img {
+      width: 40%;
+      height: auto;
+      margin: 2rem 0;
+    }
+  }
+  
+  /* MAX-WIDTH 768PX */
+  @media screen and (max-width: 834px) {
+    .logo {
+      font-size: 2rem;
+    }
+  
+    #desktop-nav {
+      display: none;
+    }
+  
+    #hamburger-nav {
+      display: flex;
+    }
+  
+    section {
+      height: 83vh;
+      margin: 5% 5%;
+      padding-top: 0.25vh;
+      max-width: 834px;
+    }
+  
+    .section-container {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+      max-width: 834px;
+      gap: 2rem;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .section-text-p1 {
+      font-size: 1.25rem;
+    }
+  
+    /* PROFILE SECTION */
+    .profile-pic-container {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
+    }
+  
+    /* ABOUT SECTION */
+    #about {
+      height: 94vh;
+    }
+  
+    #about .section-container {
+      gap: 4rem;
+    }
+  
+    #about .section-text-p4 {
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+  
+    .about-pic-container {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
+    }
+  
+    .about-details-container {
+      margin-inline: 5%;
+    }
+  
+    /* PROJECTS SECTION */
+    #projects {
+      height: auto;
+    }
+  
+    #projects .section-container {
+      height: 86vh;
+    }
+  
+    .project-img {
+      width: 45%;
+      height: auto;
+      margin: 8%;
+    }
+  
+    .projects-details-container {
+      text-align: center;
+      margin: auto;
+    }
+  
+    /* CONTACT */
+    #contact {
+      height: 74vh;
+    }
+  
+    #contact .section-container {
+      gap: 0.5rem;
+      margin: 4rem auto;
+    }
+  
+    #contact .section-container p {
+      font-size: 1.5rem;
+    }
+  
+    /* FOOTER */
+    footer {
+      height: 20vh;
+    }
+  
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  /* MAX-WIDTH 428PX */
+  @media screen and (max-width: 428px) {
+    .logo {
+      font-size: 1.5rem;
+    }
+  
+    section {
+      max-width: 428px;
+    }
+  
+    .section-container {
+      max-width: 428px;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .section-text-p1 {
+      font-size: 1.25rem;
+    }
+  
+    /* PROFILE SECTION */
+    .profile-pic-container {
+      height: 54vw;
+    }
+  
+    /* ABOUT SECTION */
+    #about {
+      height: 96vh;
+    }
+  
+    #about .section-container {
+      padding-top: 2rem;
+      gap: 2rem;
+    }
+  
+    #about .section-text-p4 {
+      font-size: 1rem;
+    }
+  
+    .about-resumen-container {
+      display: none;
+    }
+  
+    /* PROJECTS SECTION */
+    .project-img {
+      width: 50%;
+      margin: 5%;
+    }
+  
+    /* CONTACT */
+    #contact {
+      height: 64vh;
+    }
+  
+    #contact .section-container {
+      gap: 0.5rem;
+      margin: 4rem auto;
+    }
+  
+    #contact .section-container p {
+      font-size: 1rem;
+    }
+  
+    .section-contact-container {
+      margin: 0.5rem;
+    }
+  
+    /* FOOTER */
+    footer {
+      height: 30vh;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+      font-size: 1.25rem;
+    }
+  }
+  
+  /* MAX-WIDTH 375PX */
+  @media screen and (max-width: 375px) {
+    section {
+      max-width: 375px;
+    }
+  
+    .section-container {
+      max-width: 375px;
+    }
+  
+    /* ABOUT SECTION */
+    #about .section-container {
+      gap: 2rem;
+    }
+  
+    .about-details-container {
+      margin-inline: 0;
+    }
+  
+    /* PROJECTS SECTION */
+    .project-img {
+      width: 45%;
+    }
+    #projects .section-text-p4 {
+      font-size: 0.9rem;
+    }
+  }
+  
