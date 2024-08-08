@@ -195,6 +195,9 @@
     }
   
     /* PROJECTS SECTION */
+    #projects .section-container{
+      height: auto;
+    }
     
     .project-img {
       width: 50%;
@@ -251,10 +254,7 @@
       margin-inline: 0;
     }
   
-    /* PROJECTS SECTION */
-    #projects .section-container{
-      height: auto;
-    }
+    
 
     .project-img {
       width: 45%;
