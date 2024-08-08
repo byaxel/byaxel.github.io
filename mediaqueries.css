@@ -178,7 +178,7 @@
   
     /* ABOUT SECTION */
     #about {
-      height: 96vh;
+      height: auto;
     }
   
     #about .section-container {
@@ -195,6 +195,7 @@
     }
   
     /* PROJECTS SECTION */
+    
     .project-img {
       width: 50%;
       margin: 5%;
@@ -251,6 +252,10 @@
     }
   
     /* PROJECTS SECTION */
+    #projects .section-container{
+      height: auto;
+    }
+
     .project-img {
       width: 45%;
     }
