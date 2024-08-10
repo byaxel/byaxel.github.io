@@ -1,169 +1,323 @@
 @media screen and (min-width: 2560px) {
-  section {
-    max-width: 1400px;
-  }
-
-  .section-container {
-    max-width: 1400px;
-    gap: 6rem;
-  }
-
   /* PROFILE SECTION */
   #profile {
-    height: 84vh;
+    padding-bottom: 10rem;
   }
 
   .profile-pic-container {
-    height: 550px;
-    width: 550px;
+    width: 450px;
+    height: 450px;
   }
 
   /* ABOUT SECTION */
-  .about-pic-container {
-    height: 500px;
-    width: 500px;
+  #about {
+    padding-top: 8vh;
   }
 
-  /* PROJECTS SECTION */
-  .project-img {
-    width: 40%;
-    height: auto;
-    margin: 2rem 0;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  #desktop-nav {
-    display: none;
-  }
-
-  #hamburger-nav {
-    display: flex;
-  }
-
-  .logo {
-    font-size: 1.5rem;
-  }
-  section {
-    height: auto;
-    max-width: 430px;
-    margin: 5%;
-  }
-
-  .section-container {
-    height: auto;
-    max-width: 430px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .section-text-container {
-    text-align: center;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .section-sub-title {
-    font-size: 1.5rem;
-  }
-  
-
-  .section-text-p1 {
-    font-size: 1.3rem;
-  }
-
-  .section-text-p2 {
-    font-size: 0.9rem;
-  }
-
-  .section-text-p3 {
-    font-size: 1.25rem;
-  }
-
-  .section-text-p4 {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  /* PORFILE SECTION */
-  #profile {
-    height: 83vh;
-  }
-
-  .profile-pic-container {
-    width: auto;
-    height: 54vw;
-    justify-content: center;
-    margin: 0;
-  }
-
-
-  /* ABOUT SECTION */
-  .about-pic-container {
-    width: auto;
-    height: 54vw;
-    justify-content: center;
-    margin: 5%;
-  }
-
-  .about-resume-container {
-    display: none;
-  }
-
-  /* PROJECTS SECTION */
-  .project-img {
-    width: 50%;
-    height: auto;
-
-  }
-
-  .projects-details-container {
-    text-align: center;
+  #about .section-container {
+    height: 50vh;
     margin: auto;
   }
 
-  #projects .section-text-container p {
-    margin-inline: 0;
+  #about .about-pic-container,
+  .about-details-container {
+    margin-top: 0;
+  }
+
+  /* PROJECTS SECTION */
+  #projects {
+    padding-top: 8vh;
+  }
+
+  .project-pic-container {
+    width: 500px;
+  }
+
+  #projects h3 {
+    margin-top: 3vh;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .project-pic-container {
+    width: 300px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .project-pic-container {
+    width: 200px;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .section-container {
+    max-width: 700px;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 0.75rem;
+  }
+
+  p {
+    font-size: var(--font-size-s);
+  }
+
+  .profile-pic-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .btn-container {
+    margin-top: 1rem;
+  }
+
+  #socials-container {
+    margin-top: 0.75rem;
+  }
+
+  /* ABOUT SECTION */
+  #about .section-container {
+    height: 100vh;
+    margin: auto;
+  }
+
+  .about-pic-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* PROJECTS SECTION */
+  #projects .section-container {
+    height: 100vh;
+    margin: auto;
+  }
+
+  .project-pic-container {
+    width: 200px;
+  }
+
+  /* CONTACT SECTION */
+  #contact {
+    height: 75vh;
+  }
+
+  /* FOOTER SECTION */
+  #footer {
+    height: 13vh;
+  }
+
+  .directory {
+    padding: 0;
+  }
+
+  .section-contact-container {
+    margin: 0.5rem;
+  }
+
+  a {
+    font-size: var(--font-size-m);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: var(--font-size-m);
+  }
+
+  a {
+    font-size: var(--font-size-s);
+  }
+
+  /* NAV */
+  #logo {
+    height: 22px;
+  }
+
+  header nav {
+    gap: 24px;
+  }
+
+  nav a {
+    font-size: var(--font-size-s);
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  nav .icon {
+    height: 1rem;
+  }
+
+  /* PROFILE SECTION */
+  .section-background {
+    height: 100%;
+  }
+
+  #profile .section-container {
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: start;
+  }
+
+  .profile-pic-container {
+    width: 200px;
+    height: 200px;
+    margin: 8rem auto 5rem;
+  }
+
+  .section-text-profile-container {
+    margin: 1rem auto;
+  }
+
+  .btn-container {
+    margin-top: 1rem;
+  }
+
+  #socials-container {
+    margin-top: 0.75rem;
+  }
+
+
+  /* ABOUT SECTION */
+  #about .section-container {
+    flex-direction: column;
+  }
+
+  .about-pic-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* PROJECTS SECTION */
+
+  .project-pic-container {
+    width: 230px;
   }
 
 
   /* CONTACT SECTION */
-  #contact {
-    height: 67vh;
+#contact .section-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  gap: 1rem;
+  align-items: start;
+}
+
+.section-contact-container a {
+  margin: auto;
+  display: flex;
+}
+
+.icon-linkedin {
+  width: 27px;
+  height: 27px;
+  padding-left: 2px;
+}
+
+
+
+ /* FOOTER SECTION */
+  footer {
+    height: 15vh;
   }
 
-  #contact .section-container {
-    gap: 0rem;
-    margin: 4rem auto;
+  footer .section-container {
+    margin: auto auto 1rem;
   }
 
-  #contact .section-container p {
+  footer hr {
+    margin: 5px 0;
+  }
+
+  footer .legal {
+    padding: 5px 0;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
     font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: var(--font-size-s);
+  }
+
+  a {
+    font-size: var(--font-size-s);
+  }
+
+
+  /* PROFILE SECTION */
+  .profile-pic-container {
+    width: 200px;
+    height: 200px;
+    margin: 6rem auto 3rem;
+  }
+
+
+
+  /* ABOUT SECTION */
+  .about-pic-container {
+    width: 200px;
+    height: 200px;
+  }
+
+
+
+  /* PROJECTS SECTION */
+  .project-pic-container {
+    width: 200px;
   }
 
 
   /* FOOTER SECTION */
   footer {
-    height: 25vh;
+    height: 15vh;
   }
 
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+  footer .section-container {
+    margin: auto auto 1rem;
   }
 
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-    font-size: 1.25rem;
-  }
-
-  footer nav li:last-child {
-    padding: 0;
-  }
 
 }
