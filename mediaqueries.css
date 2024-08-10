@@ -53,8 +53,14 @@
 }
 
 @media screen and (max-width: 1000px) {
+  section {
+    min-height: 100vh;
+    height: auto;
+  }
+
   .section-container {
     max-width: 700px;
+    margin: 5%;
     gap: 2rem;
   }
 
@@ -88,10 +94,6 @@
   }
 
   /* ABOUT SECTION */
-  #about .section-container {
-    height: 100vh;
-    margin: auto;
-  }
 
   .about-pic-container {
     width: 250px;
@@ -99,10 +101,7 @@
   }
 
   /* PROJECTS SECTION */
-  #projects .section-container {
-    height: 100vh;
-    margin: auto;
-  }
+  
 
   .project-pic-container {
     width: 200px;
@@ -110,7 +109,7 @@
 
   /* CONTACT SECTION */
   #contact {
-    height: 75vh;
+    min-height: 75vh;
   }
 
   /* FOOTER SECTION */
@@ -132,6 +131,7 @@
 }
 
 @media only screen and (max-width: 700px) {
+
   h1 {
     font-size: 2rem;
   }
@@ -153,8 +153,13 @@
   }
 
   /* NAV */
-  #logo {
-    height: 22px;
+  #logo, nav .logo {
+    height: var(--symbol-s);
+  }
+  
+  .logo {
+    height: var(--symbol-s);
+    margin: auto;
   }
 
   header nav {
@@ -170,24 +175,25 @@
   }
 
   nav .icon {
-    height: 1rem;
+    height: var(--symbol-s);
   }
+
 
   /* PROFILE SECTION */
   .section-background {
-    height: 100%;
+    min-height: 100vh;
+    height: auto;
   }
 
   #profile .section-container {
     flex-direction: column;
-    max-width: 600px;
     justify-content: start;
   }
 
   .profile-pic-container {
     width: 200px;
     height: 200px;
-    margin: 8rem auto 5rem;
+    margin: 6rem auto 3rem;
   }
 
   .section-text-profile-container {
@@ -221,6 +227,10 @@
 
 
   /* CONTACT SECTION */
+  #contact {
+    min-height: 85vh;
+    height: auto;
+  }
 #contact .section-container {
   display: flex;
   flex-direction: column;
@@ -312,7 +322,7 @@
 
   /* FOOTER SECTION */
   footer {
-    height: 15vh;
+    height: auto;
   }
 
   footer .section-container {
