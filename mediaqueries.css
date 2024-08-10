@@ -322,6 +322,7 @@
 
   /* FOOTER SECTION */
   footer {
+    min-height: 16vh;
     height: auto;
   }
 
