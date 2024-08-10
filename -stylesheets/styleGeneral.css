@@ -28,6 +28,12 @@
   --symbol-s: 20px;
 	--symbol-m: 25px;
 	--symbol-l: 35px;
+
+  --padding-xxs: 4px;
+	--padding-xs: 10px;
+	--padding-s: 20px;
+	--padding-m: 40px;
+	--padding-l: 80px;
 	
 	--content-width-article: 600px;
 	--content-width-normal: 1000px;

@@ -1,0 +1,74 @@
+.section-app-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50vh;
+  height: auto;
+  margin: auto;
+}
+
+.section-app-background .section-text-container {
+    position: absolute;
+    top: 20px;
+
+}
+
+.section-app-background:first-child {
+  height: 94vh;
+  padding-top: 5rem;
+}
+
+.color {
+  background-color: var(--color-element-background-secondary);
+}
+
+.section-app-screenshot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: min(100dvw - var(--padding-l), var(--content-width-normal));
+  gap: 4rem;
+  height: 100%;
+  margin: auto auto 0;
+  margin-bottom: 0;
+}
+
+.screenshot {
+  position: absolute; /* Fija el contenedor .screenshot */
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 2rem;
+}
+
+.screenshot img {
+  width: 55%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Asegura que la imagen no exceda la altura del contenedor */
+  object-fit: cover; /* La imagen se recorta para llenar el contenedor si es necesario */
+}
+
+@media only screen and (max-width: 700px) {
+ 
+
+  .section-app-background:first-child {
+    max-height: 30vh;
+    padding-top: 5rem;
+  }
+
+  
+
+  .section-app-background {
+    min-height: 80vh;
+  }
+
+  .screenshot img {
+    width: 85%;
+    height: auto;
+  }
+}
