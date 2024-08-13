@@ -1,3 +1,9 @@
+html, body {
+    height: 100%; /* Asegura que el cuerpo y el html ocupan toda la altura */
+    margin: 0; /* Elimina márgenes predeterminados */
+    overflow-x: hidden; /* Previene el desplazamiento horizontal */
+  }
+
 /* GENERAL */
 .color {
   background-color: var(--color-element-background-secondary);
@@ -263,13 +269,13 @@ p {
 }
 
 /* Prevent selecting images */
-nav img {
+/* nav img {
   pointer-events: visible;
 }
 
 img {
   pointer-events: none;
-}
+} */
 
 @media screen and (min-width: 2560px) {
   .section-nav {
