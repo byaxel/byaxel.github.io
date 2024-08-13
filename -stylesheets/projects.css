@@ -291,6 +291,10 @@ img {
     gap: 25px;
   }
 
+  .section-textapp-content {
+    width: 90dvw;
+  }
+
   nav .icon {
     height: var(--symbol-s);
   }
@@ -368,15 +372,11 @@ img {
   }
 
   #myreadsapp-googlebooks .section-screenshot-content {
-    width: 80dvw;
+    width: 65%;
   }
 
-  #myreadsapp-googlebooks .section-textapp-content {
-    width: 70dvw;
-  }
 
-  /* AUTHENTICATION STORAGE */
-
+  /* STORAGE SECTION */
   #myreadsapp-storage {
     height: auto;
   }
@@ -388,13 +388,7 @@ img {
     gap: 2rem;
   }
 
-  #myreadsapp-storage .section-screenshot-content {
-    width: 90dvw;
-  }
-
-  #myreadsapp-storage .section-textapp-content {
-    width: 90dvw;
-  }
+  
 
   /* MVVM SECTION */
   #myreadsapp-mvvm {
@@ -410,13 +404,7 @@ img {
   }
 
   
-  #myreadsapp-mvvm .section-details img {
-    width: 70dvw;
-  }
-
-  #myreadsapp-mvvm .section-textapp-content {
-    width: 90dvw;
-  }
+  
 
 
   /* AUTHENTICATION WHATSANEXT */
@@ -428,20 +416,16 @@ img {
     flex-direction: column-reverse;
     align-items: center;
     margin: 2rem 0 0;
-    gap: 3rem;
+    /* gap: 3rem; */
   }
 
 
   #myreadsapp-whatsnext .section-screenshot-content {
-    margin-top: auto;
-    margin-bottom: 0;
     margin-top: 2rem;
-    width: 50dvw;
-    
   }
 
-  #myreadsapp-whatsnext img {
-    margin-top: auto;
+  #myreadsapp-whatsnext .section-textapp-content {
+    width: 100%;
   }
 
   #myreadsapp-whatsnext .btn {
@@ -450,6 +434,7 @@ img {
 
   /* FOOTER */
   footer .directory {
-    gap : 14px
+    gap : 14px;
+    height: auto;
   } 
 }
