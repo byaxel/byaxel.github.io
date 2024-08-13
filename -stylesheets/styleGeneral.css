@@ -25,8 +25,9 @@
   --font-size-m: 14px;
   --font-size-l: 16px;
 
-  --symbol-s: 20px;
-	--symbol-m: 25px;
+  --symbol-xs: 20px;
+  --symbol-s: 23px;
+	--symbol-m: 26px;
 	--symbol-l: 35px;
 
   --padding-xxs: 4px;
@@ -34,6 +35,7 @@
 	--padding-s: 20px;
 	--padding-m: 40px;
 	--padding-l: 80px;
+  --padding-xl: 100px;
 	
 	--content-width-article: 600px;
 	--content-width-normal: 1000px;
@@ -63,7 +65,7 @@
 
 * {
   margin: 0;
-  padding: 0;
+
 }
 
 html {
@@ -129,7 +131,7 @@ header {
 }
 
 .section-nav {
-  width: min(100dvw - var(--padding-l), var(--content-width-normal));
+  width: min(100dvw - var(--padding-l), var(--content-width-extra));
   padding: 0 5rem;
 }
 
@@ -147,17 +149,6 @@ header nav {
 .logo {
   display: flex;
   align-self: center;
-}
-
-.logo {
-  grid-column: 1;
-  margin-right: auto;
-  height: var(--symbol-l);
-  cursor: pointer;
-}
-
-nav .icon {
-  font-size: var(--symbol-m);
 }
 
 .nav-links {
@@ -191,6 +182,11 @@ a:hover {
 .icon {
   cursor: pointer;
   height: var(--symbol-l);
+}
+
+nav .icon {
+  cursor: pointer;
+  height: var(--symbol-m);
 }
 
 /* BUTTONS */

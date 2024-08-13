@@ -11,11 +11,11 @@
 
   /* ABOUT SECTION */
   #about {
-    padding-top: 8vh;
+    padding-top: 8dvh;
   }
 
   #about .section-container {
-    height: 50vh;
+    height: 50dvh;
     margin: auto;
   }
 
@@ -26,7 +26,7 @@
 
   /* PROJECTS SECTION */
   #projects {
-    padding-top: 8vh;
+    padding-top: 8dvh;
   }
 
   .project-pic-container {
@@ -34,7 +34,7 @@
   }
 
   #projects h3 {
-    margin-top: 3vh;
+    margin-top: 3dvh;
   }
 }
 
@@ -54,7 +54,7 @@
 
 @media screen and (max-width: 1000px) {
   section {
-    min-height: 100vh;
+    min-height: 100dvh;
     height: auto;
   }
 
@@ -109,12 +109,12 @@
 
   /* CONTACT SECTION */
   #contact {
-    min-height: 75vh;
+    min-height: 75dvh;
   }
 
   /* FOOTER SECTION */
   #footer {
-    height: 13vh;
+    height: 13dvh;
   }
 
   .directory {
@@ -181,7 +181,7 @@
 
   /* PROFILE SECTION */
   .section-background {
-    min-height: 100vh;
+    min-height: 100dvh;
     height: auto;
   }
 
@@ -228,7 +228,7 @@
 
   /* CONTACT SECTION */
   #contact {
-    min-height: 85vh;
+    min-height: 85dvh;
     height: auto;
   }
 #contact .section-container {
@@ -254,7 +254,7 @@
 
  /* FOOTER SECTION */
   footer {
-    height: 15vh;
+    height: 15dvh;
   }
 
   footer .section-container {
@@ -322,7 +322,7 @@
 
   /* FOOTER SECTION */
   footer {
-    min-height: 16vh;
+    min-height: 16dvh;
     height: auto;
   }
 

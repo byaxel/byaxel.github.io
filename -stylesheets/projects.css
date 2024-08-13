@@ -8,13 +8,12 @@ p {
 }
 
 .section-textapp-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem;
 }
-
 
 /* PRESENTATION SECTION*/
 #myreadsapp-presentation {
@@ -54,8 +53,6 @@ p {
   margin: auto auto 0;
 }
 
-
-
 /* DETAILS GENERAL */
 .section-appdetails-content {
   display: flex;
@@ -82,8 +79,6 @@ p {
   align-items: center;
 }
 
-
-
 /* AUTHENTICATION */
 #myreadsapp-authentication {
   min-height: 65dvh;
@@ -91,12 +86,12 @@ p {
 }
 
 #myreadsapp-authentication .section-screenshot-content {
-    width: 28%;
+  width: 28%;
 }
 
 #myreadsapp-authentication .section-textapp-content {
-    width: 46%;
-    gap: 2rem;
+  width: 46%;
+  gap: 2rem;
 }
 
 .screenshot-authentication-img {
@@ -105,8 +100,6 @@ p {
   object-fit: contain;
   margin: auto;
 }
-
-
 
 /* GOOGLEBOOKS */
 #myreadsapp-googlebooks {
@@ -130,10 +123,6 @@ p {
   object-fit: contain;
   margin: auto;
 }
-
-
-
-
 
 /* STORAGE */
 #myreadsapp-storage {
@@ -159,14 +148,12 @@ p {
 }
 
 #myreadsapp-storage .icon-container {
-    margin: 2%;
-  }
+  margin: 2%;
+}
 
-  #myreadsapp-storage .icon-container img {
-    pointer-events: visible;
-  }
-
-
+#myreadsapp-storage .icon-container img {
+  pointer-events: visible;
+}
 
 /* MVVM */
 #myreadsapp-mvvm {
@@ -174,8 +161,8 @@ p {
   padding-top: 0rem;
 }
 
-#myreadsapp-mvvm .section-appdetails-content{
-    margin: 3% 0;
+#myreadsapp-mvvm .section-appdetails-content {
+  margin: 3% 0;
 }
 
 #myreadsapp-mvvm .section-details {
@@ -206,7 +193,6 @@ p {
   margin-bottom: 2%;
 }
 
-
 .screenshot-code-repository-img {
   width: 100%;
   height: 100%;
@@ -221,83 +207,69 @@ p {
   margin: 0 auto auto;
 }
 
-
 /* WHATS NEXT */
 #myreadsapp-whatsnext {
-    min-height: 50dvh;
-    height: auto;
-    padding-top: 0rem;
-    justify-content: end;
+  min-height: 50dvh;
+  height: auto;
+  padding-top: 0rem;
+  justify-content: end;
 }
 
 #myreadsapp-whatsnext .section-appdetails-content {
-    flex-direction: column;
-    height: 100%;
-    margin-bottom: 0;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 0;
 }
 
-#myreadsapp-whatsnext .section-details{
-    margin-top: 5%;
-    margin-bottom: 0;
-    flex-direction: row;
+#myreadsapp-whatsnext .section-details {
+  margin-top: 5%;
+  margin-bottom: 0;
+  flex-direction: row;
 }
 
-#myreadsapp-whatsnext .section-screenshot-content{
-    width: 40%;
+#myreadsapp-whatsnext .section-screenshot-content {
+  width: 40%;
 }
 
 #myreadsapp-whatsnext .section-textapp-content {
-    flex-direction: column;
-    width: 60%;
-    margin-bottom: auto;
+  flex-direction: column;
+  width: 60%;
+  margin-bottom: auto;
 }
 
 .screenshot-whatsnext-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    margin: 0 auto auto;
-    margin-inline: 0;
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0 auto auto;
+  margin-inline: 0;
+}
 
-
-  .screenshot-whatsnext-img img {
-    margin-top: auto;
-    
-  }
+.screenshot-whatsnext-img img {
+  margin-top: auto;
+}
 
 .try-mode {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .try-mode p {
-    font-weight: bold;
+  font-weight: bold;
 }
-
-
-
-
-
-
 
 /* Prevent selecting images */
 nav img {
-    pointer-events: visible;
+  pointer-events: visible;
 }
 
 img {
-    pointer-events: none;
+  pointer-events: none;
 }
-
-
-
-
 
 @media screen and (min-width: 2560px) {
   .section-nav {
@@ -311,9 +283,188 @@ img {
   .section-presentation-screenshot-content {
     display: flex;
     margin-top: auto;
-    width: 100%;
+    width: 100dvw;
     height: auto;
     overflow: hidden;
     padding: auto;
   }
+}
+
+@media screen and (max-width: 1024px) {
+  .section-nav,
+  .section-presentation-content,
+  .section-appdetails-content {
+    width: 95dvw;
+  }
+}
+
+@media screen and (max-width: 834px) {
+}
+
+@media only screen and (max-width: 700px) {
+  header nav {
+    gap: 25px;
+  }
+
+  nav .icon {
+    height: var(--symbol-s);
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: var(--font-size-s);
+  }
+
+  .section-appdetails-content {
+    margin: 1rem 0 2rem;
+  }
+
+  /* PRESENTATION SECTION */
+  #myreadsapp-presentation {
+    max-height: 90dvh;
+    height: auto;
+    /* overflow: hidden; */
+  }
+
+  .section-presentation-screenshot-content {
+    width: 100dvw;
+    height: auto;
+  }
+
+  #myreadsapp img {
+    margin-bottom: 0;
+  }
+
+  /* AUTHENTICATION SECTION */
+  #myreadsapp-authentication {
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  #myreadsapp-authentication .section-details {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+  
+  }
+
+  #myreadsapp-authentication .section-screenshot-content {
+    width: 60dvw;
+  }
+
+  #myreadsapp-authentication .section-textapp-content {
+    width: 70dvw;
+  }
+
+  /* AUTHENTICATION GOOGLEBOOKS */
+  #myreadsapp-googlebooks {
+    height: auto;
+  }
+
+  #myreadsapp-googlebooks .section-details {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  #myreadsapp-googlebooks .section-screenshot-content {
+    width: 80dvw;
+  }
+
+  #myreadsapp-googlebooks .section-textapp-content {
+    width: 70dvw;
+  }
+
+  /* AUTHENTICATION STORAGE */
+
+  #myreadsapp-storage {
+    height: auto;
+  }
+
+  #myreadsapp-storage .section-details {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 2rem;
+  }
+
+  #myreadsapp-storage .section-screenshot-content {
+    width: 90dvw;
+  }
+
+  #myreadsapp-storage .section-textapp-content {
+    width: 90dvw;
+  }
+
+  /* MVVM SECTION */
+  #myreadsapp-mvvm {
+    height: auto;
+  }
+
+
+  #myreadsapp-mvvm .section-details {
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 2rem;
+  }
+
+  
+  #myreadsapp-mvvm .section-details img {
+    width: 70dvw;
+  }
+
+  #myreadsapp-mvvm .section-textapp-content {
+    width: 90dvw;
+  }
+
+
+  /* AUTHENTICATION WHATSANEXT */
+  #myreadsapp-whatsnext {
+    height: auto;
+  }
+
+  #myreadsapp-whatsnext .section-details {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 2rem 0 0;
+    gap: 3rem;
+  }
+
+
+  #myreadsapp-whatsnext .section-screenshot-content {
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    width: 50dvw;
+    
+  }
+
+  #myreadsapp-whatsnext img {
+    margin-top: auto;
+  }
+
+  #myreadsapp-whatsnext .btn {
+    padding: 0.75rem;
+  }
+
+  /* FOOTER */
+  footer .directory {
+    gap : 14px
+  } 
 }
