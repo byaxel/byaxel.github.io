@@ -10,6 +10,7 @@ html, body {
 }
 
 p {
+    font-size: var(--font-size-m);
   margin-bottom: 1%;
 }
 
@@ -18,13 +19,16 @@ p {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 1rem;
+  margin: 1.5rem;
+  gap: 1.5rem;
+  width: 100%;
 }
 
 /* PRESENTATION SECTION*/
 #myreadsapp-presentation {
-  max-height: 94dvh;
+  height: 90dvh;
   padding-top: 6rem;
+  margin: 0 0;
 }
 
 .section-presentation-content {
@@ -39,7 +43,7 @@ p {
 .section-details-presentation-content {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   height: 100%;
   align-items: center;
 }
@@ -47,8 +51,8 @@ p {
 .section-presentation-screenshot-content {
   display: flex;
   margin-top: auto;
-  width: 80%;
-  height: 75%;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -64,9 +68,9 @@ p {
   display: flex;
   flex-direction: column;
   width: min(100dvh - var(--padding-l), var(--content-width-normal));
-  height: auto;
+  height: 100%;
   align-items: center;
-  margin: auto 0;
+  margin: 4rem 0;
 }
 
 .section-details {
@@ -80,145 +84,113 @@ p {
 .section-screenshot-content {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: auto;
+  width: 80%;
+  height: 100%;
   align-items: center;
+}
+
+.screenshot-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+}
+
+section {
+    height: auto;
 }
 
 /* AUTHENTICATION */
 #myreadsapp-authentication {
-  min-height: 65dvh;
   height: auto;
 }
 
-#myreadsapp-authentication .section-screenshot-content {
-  width: 28%;
-}
 
 #myreadsapp-authentication .section-textapp-content {
-  width: 46%;
-  gap: 2rem;
+  gap: 3rem;
 }
 
-.screenshot-authentication-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  margin: auto;
-}
+
 
 /* GOOGLEBOOKS */
 #myreadsapp-googlebooks {
-  min-height: 65dvh;
   height: auto;
 }
 
 #myreadsapp-googlebooks .section-screenshot-content {
   flex-direction: row;
-  width: 56%;
-  gap: 0;
 }
 
-#myreadsapp-googlebooks .section-textapp-content {
-  width: 46%;
-}
 
-.screenshot-googlebooks-img {
-  width: 50%;
-  height: 100%;
-  object-fit: contain;
-  margin: auto;
-}
 
 /* STORAGE */
 #myreadsapp-storage {
-  min-height: 70dvh;
   height: auto;
 }
 
 #myreadsapp-storage .section-details {
   flex-direction: row;
-  gap: 10%;
+  gap: 4rem;
 }
 
-#myreadsapp-storage .section-screenshot-content {
-  width: 50%;
-  height: 100%;
+#myreadsapp-storage .screenshot-img {
+    width: 65%;
 }
 
-.screenshot-storage-img {
-  width: 60%;
-  height: 100%;
-  object-fit: contain;
-  margin: 3% 0 0;
+#myreadsapp-storage .section-textapp-content {
+    width: 80%;
 }
 
 #myreadsapp-storage .icon-container {
   margin: 2%;
 }
 
-#myreadsapp-storage .icon-container img {
-  pointer-events: visible;
-}
+
 
 /* MVVM */
 #myreadsapp-mvvm {
   height: auto;
-  padding-top: 0rem;
-}
-
-#myreadsapp-mvvm .section-appdetails-content {
-  margin: 3% 0;
 }
 
 #myreadsapp-mvvm .section-details {
-  flex-direction: row;
-  gap: 3rem;
-  margin-bottom: 2%;
-}
-
-.screenshot-viewmodel-img {
-  width: 65%;
-  height: 100%;
-  object-fit: contain;
-  margin: auto;
-}
-
-.screenshot-code-viewmodel-img {
-  width: 90%;
-  height: 100%;
-  object-fit: contain;
-  margin: auto;
-}
-
-#myreadsapp-mvvm .section-screenshot-content {
-  margin: 0 auto auto;
+    gap: 4rem;
 }
 
 #myreadsapp-mvvm .section-textapp-content {
-  margin-bottom: 2%;
+    margin-bottom: 0;
 }
 
-.screenshot-code-repository-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  margin: 0 auto auto;
+.mvvm-iphone {
+    width: 75%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
 }
 
-.screenshot-code-datasource-img {
-  width: 96%;
-  height: 100%;
-  object-fit: contain;
-  margin: 0 auto auto;
+
+#myreadsapp-mvvm .screenshot-img {
+    width: 100%;
+    margin-top: auto;
 }
+
+.adapt {
+    width: 90%;
+}
+
+#myreadsapp-mvvm .section-screenshot-content .section-textapp-content {
+    margin: 2rem 3rem;
+    height: 30%;
+}
+
+
+.bold-text {
+    font-weight: 800;
+}
+
 
 /* WHATS NEXT */
 #myreadsapp-whatsnext {
-  min-height: 50dvh;
   height: auto;
-  padding-top: 0rem;
-  justify-content: end;
 }
 
 #myreadsapp-whatsnext .section-appdetails-content {
@@ -228,13 +200,12 @@ p {
 }
 
 #myreadsapp-whatsnext .section-details {
-  margin-top: 5%;
-  margin-bottom: 0;
   flex-direction: row;
 }
 
 #myreadsapp-whatsnext .section-screenshot-content {
-  width: 40%;
+  width: 60%;
+
 }
 
 #myreadsapp-whatsnext .section-textapp-content {
@@ -253,6 +224,10 @@ p {
 
 .screenshot-whatsnext-img img {
   margin-top: auto;
+}
+
+#myreadsapp-whatsnext .btn-container {
+    margin: 1rem 0 auto;
 }
 
 .try-mode {
@@ -278,6 +253,10 @@ img {
 } */
 
 @media screen and (min-width: 2560px) {
+    p {
+        font-size: var(--font-size-l);
+    }
+
   .section-nav {
     width: min(100dvh - var(--padding-l), var(--content-width-extra));
   }
@@ -286,14 +265,14 @@ img {
     width: min(100dvh - var(--padding-l), var(--content-width-extra));
   }
 
-  .section-presentation-screenshot-content {
+  /* .section-presentation-screenshot-content {
     display: flex;
     margin-top: auto;
     width: 100dvw;
     height: auto;
     overflow: hidden;
     padding: auto;
-  }
+  } */
 }
 
 @media screen and (max-width: 1024px) {

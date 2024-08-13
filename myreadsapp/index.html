@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    
+
     <link rel="stylesheet" href="/-stylesheets/styleGeneral.css" />
     <link rel="stylesheet" href="/-stylesheets/style.css" />
     <link rel="stylesheet" href="/-stylesheets/projects.css" />
-    
   </head>
 
   <body>
@@ -90,21 +89,23 @@
                 src-light="../assets/myreadsapp-screenshots/myreadsapp-authentication-light.png"
                 src-dark="../assets/myreadsapp-screenshots/myreadsapp-authentication-dark.png"
                 alt="MyReadsApp"
-                class="icon screenshot-authentication-img"
+                class="icon screenshot-img"
               />
             </div>
             <div class="section-textapp-content">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                et recusandae eum voluptatem molestias, quam cupiditate itaque,
-                ipsa enim repudiandae dolorem nesciunt quisquam, corporis ipsum
-                labore necessitatibus fuga. Assumenda, eligendi?
+                The authentication screen allows users to log in to the app
+                using their email and password or through Google and Apple
+                authentication. The integration with Firebase Authentication
+                ensures a secure and efficient process, managing both credential
+                verification and real-time error handling.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                et recusandae eum voluptatem molestias, quam cupiditate itaque,
-                ipsa enim repudiandae dolorem nesciunt quisquam, corporis ipsum
-                labo
+                The registration screen provides new users with the option to
+                create an account using their email and password. Upon
+                registration, user data is securely stored in Firebase
+                Authentication, facilitating user management and integration
+                with other Firebase services.
               </p>
             </div>
 
@@ -114,7 +115,7 @@
                 src-light="../assets/myreadsapp-screenshots/myreadsapp-registrer-light.png"
                 src-dark="../assets/myreadsapp-screenshots/myreadsapp-registrer-dark.png"
                 alt="MyReadsApp"
-                class="icon screenshot-authentication-img"
+                class="icon screenshot-img"
               />
             </div>
           </div>
@@ -132,28 +133,32 @@
                 src-light="../assets/myreadsapp-screenshots/myreadsapp-googleapi1-light.png"
                 src-dark="../assets/myreadsapp-screenshots/myreadsapp-googleapi1-dark.png"
                 alt="MyReadsApp"
-                class="icon screenshot-googlebooks-img"
+                class="icon screenshot-img"
               />
+            </div>
+            <div class="section-screenshot-content">
               <img
                 src="../assets/myreadsapp-screenshots/myreadsapp-googleapi2-light.png"
                 src-light="../assets/myreadsapp-screenshots/myreadsapp-googleapi2-light.png"
                 src-dark="../assets/myreadsapp-screenshots/myreadsapp-googleapi2-dark.png"
                 alt="MyReadsApp"
-                class="icon screenshot-googlebooks-img"
+                class="icon screenshot-img"
               />
             </div>
             <div class="section-textapp-content">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                et recusandae eum voluptatem molestias, quam cupiditate itaque,
-                ipsa enim repudiandae dolorem nesciunt quisquam, corporis ipsum
-                labore necessitatibus fuga. Assumenda, eligendi?
+                The application integrates the Google Books API, allowing users
+                to search for books in real-time and displaying results that
+                include the cover image, title, and a brief description. These
+                data are directly retrieved from the API and transformed to fit
+                the user interface, ensuring a clear and organized presentation.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                et recusandae eum voluptatem molestias, quam cupiditate itaque,
-                ipsa enim repudiandae dolorem nesciunt quisquam, corporis ipsum
-                labo
+                When a user selects a book, the app provides a detailed view
+                with additional information such as the author, full synopsis,
+                and other relevant details. This data is efficiently processed
+                from the API to ensure a seamless and consistent user
+                experience.
               </p>
             </div>
           </div>
@@ -172,13 +177,16 @@
                 src-light="../assets/myreadsapp-screenshots/myreadsapp-firestore-light.png"
                 src-dark="../assets/myreadsapp-screenshots/myreadsapp-firestore-dark.png"
                 alt="MyReadsApp"
-                class="icon screenshot-storage-img"
+                class="icon screenshot-img"
               />
               <div class="section-textapp-content">
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Veritatis labore consequuntur aliquam esse. Fuga error tenetur
-                  fugiat nesciunt maiores saepe dolorem accusamus aliquid hid.
+                  The application integrates Firestore for managing the storage
+                  and synchronization of user data, such as book lists and
+                  reading progress. Firestore provides real-time database
+                  capabilities, allowing for dynamic updates and data
+                  consistency across multiple devices, ensuring that user
+                  information remains up-to-date and accessible from anywhere.
                 </p>
               </div>
             </div>
@@ -189,15 +197,16 @@
                 src-light="../assets/myreadsapp-screenshots/myreadsapp-appstorage-light.png"
                 src-dark="../assets/myreadsapp-screenshots/myreadsapp-appstorage-dark.png"
                 alt="MyReadsApp"
-                class="icon screenshot-storage-img"
+                class="icon screenshot-img"
               />
               <div class="section-textapp-content">
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Veritatis labore consequuntur aliquam esse. Fuga error tenetur
-                  fugiat nesciunt maiores saepe dolorem accusamus aliquid At!
+                  For app theme configuration, AppStorage is used to store user
+                  preferences for light and dark modes. AppStorage ensures
+                  persistent storage of these settings, guaranteeing that user
+                  preferences are retained between sessions and automatically
+                  applied each time the app is launched.
                 </p>
-                
               </div>
               <div class="try-mode">
                 <p>Choose your style</p>
@@ -212,7 +221,6 @@
                   />
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
@@ -220,17 +228,20 @@
 
       <section id="myreadsapp-mvvm" class="color">
         <div class="section-appdetails-content">
-
           <h3>Architecture</h3>
           <h4>MVVM</h4>
 
-          <div class="section-textapp-content">
+          <div class="section-textapp-content adapt">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Veritatis labore consequuntur aliquam esse. Fuga error tenetur
-              fugiat nesciunt maiores saepe dolorem accusamus aliquid hic
-              libero vitae, voluptas inventore cupiditate. At!
+              The MVVM architecture clearly separates the user interface,
+              presentation logic, and business logic. In this pattern, the
+              ViewModel retrieves data from the repository, which manages data
+              access. The ViewModel transforms this data for use in the View.
+              This separation allows the View to focus on presentation, while
+              the ViewModel handles data access and processing logic, enhancing
+              the application’s maintainability and scalability.
             </p>
+            <p></p>
           </div>
 
           <div class="section-details">
@@ -240,7 +251,7 @@
                 src-light="../assets/myreadsapp-screenshots/myreadsapp-mvvm-light.png"
                 src-dark="../assets/myreadsapp-screenshots/myreadsapp-mvvm-dark.png"
                 alt="MyReadsApp"
-                class="icon screenshot-viewmodel-img"
+                class="icon mvvm-iphone"
               />
             </div>
 
@@ -250,19 +261,21 @@
                 src-light="../assets/myreadsapp-screenshots/myreadsapp-code-viewmodel-light.png"
                 src-dark="../assets/myreadsapp-screenshots/myreadsapp-code-viewmodel-dark.png"
                 alt="MyReadsApp"
-                class="icon screenshot-code-viewmodel-img"
+                class="icon screenshot-img"
               />
             </div>
           </div>
-        
-          
-          <div class="section-details">
+
+          <div class="section-details repodata">
             <div class="section-screenshot-content">
               <div class="section-textapp-content">
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Veritatis labore consequuntur aliquam esse. Fuga error tenetur
-                  fugiat nesciunt maiores saepe dolorem accusamus aliquid At!
+                  The repository handles data access and provides methods to the
+                  ViewModel. The <span class="bold-text">ViewModel</span> uses
+                  these methods to fetch data, while the repository manages
+                  communication with the datasource. This separation keeps the
+                  ViewModel focused on presentation logic and the repository on
+                  data management, improving code modularity and maintenance.
                 </p>
               </div>
               <img
@@ -270,16 +283,20 @@
                 src-light="../assets/myreadsapp-screenshots/myreadsapp-code-repository-light.png"
                 src-dark="../assets/myreadsapp-screenshots/myreadsapp-code-repository-dark.png"
                 alt="MyReadsApp"
-                class="icon screenshot-code-repository-img"
+                class="icon screenshot-img"
               />
             </div>
 
             <div class="section-screenshot-content">
               <div class="section-textapp-content">
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Veritatis labore consequuntur aliquam esse. Fuga error tenetur
-                  fugiat nesciunt maiores saepe dolorem accusamus aliquid At!
+                  The datasource handles direct interaction with Firestore to
+                  retrieve user data. It provides methods for data access,
+                  abstracting the complexity of read and write operations. The
+                  repository uses these methods to fetch data, which is then
+                  managed by the ViewModel. This abstraction simplifies data
+                  handling in higher layers by hiding the details of data
+                  access.
                 </p>
               </div>
               <img
@@ -287,43 +304,54 @@
                 src-light="../assets/myreadsapp-screenshots/myreadsapp-code-datasource-light.png"
                 src-dark="../assets/myreadsapp-screenshots/myreadsapp-code-datasource-dark.png"
                 alt="MyReadsApp"
-                class="icon screenshot-code-datasource-img"
+                class="icon screenshot-img"
               />
             </div>
           </div>
-          
         </div>
       </section>
-
 
       <section id="myreadsapp-whatsnext">
         <div class="section-appdetails-content">
           <h3>What's Next?</h3>
+          <div class="section-text-container">
+            <p>
+              Building this app has been an incredibly rewarding experience.
+              While my main goal was to learn and enjoy the development
+              process, I must admit that, instead of helping me organize my
+              reading and read more, the app has had the opposite effect! Now
+              I have an app to manage my reading, so I plan to dive back into
+              books immediately!
+            </p>
+          </div>
           <section class="section-details">
+            <div class="section-text-container">
+              
+            </div>
             <div class="section-screenshot-content">
               <img
                 src="../assets/myreadsapp-screenshots/myreadsapp-whatsnext-light.png"
                 src-light="../assets/myreadsapp-screenshots/myreadsapp-whatsnext-light.png"
                 src-dark="../assets/myreadsapp-screenshots/myreadsapp-whatsnext-dark.png"
                 alt="MyReadsApp"
-                class="icon screenshot-whatsnext-img"
+                class="icon screenshot-img"
               />
             </div>
             <div class="section-textapp-content">
               
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Veritatis labore consequuntur aliquam esse. Fuga error tenetur
-                fugiat nesciunt maiores saepe dolorem accusamus aliquid At!
+                I recognize that the app still has much to be polished: from
+                adjusting functions and designs to refining details and possibly
+                reorganizing parts of the code for better structure. I’m open to
+                any suggestions or constructive criticism and would love to
+                receive feedback on my GitHub code. I’m eager to continue
+                learning and improving, so please feel free to propose any
+                enhancements.
               </p>
-
-
+              <p>Thank you for your interest and for following this project!</p>
 
               <div class="btn-container">
-                <button
-                  class="btn btn-color-2"
-                  onclick="window.open('')"
-                >
+                <button class="btn btn-color-2" onclick="window.open('')">
                   Github
                 </button>
                 <button
@@ -334,16 +362,9 @@
                 </button>
               </div>
             </div>
-
-            
-            
           </section>
-          
-
-
         </div>
       </section>
-
     </main>
 
     <!-- Footer -->
@@ -352,7 +373,7 @@
         <div class="directory nav-links">
           <a href="/#profile">Home</a>
           <a href="/#about">About</a>
-          <a href="/#projects">Projects</a> 
+          <a href="/#projects">Projects</a>
           <a href="/#contact">Contact</a>
         </div>
 
