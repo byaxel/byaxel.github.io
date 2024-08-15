@@ -1,0 +1,289 @@
+/* SECTIONS */
+@import url("style-general.css");
+
+/* GENERAL */
+.screenshot-myreadsapp {
+  height: 100%;
+  min-height: initial;
+  min-width: initial;
+  width: 100%;
+  object-fit: contain;
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  margin: var(--padding-s) 0;
+}
+
+body h3 {
+  font-weight: var(--font-weight-l);
+}
+
+/* PRESENTATION SECTION */
+#presentation {
+  background-color: var(--color-element-background-secondary);
+  padding-bottom: 0;
+}
+
+#presentation {
+  padding-top: var(--padding-m);
+}
+
+#presentation > div {
+  grid-template-columns: 1fr;
+  text-align: center;
+  row-gap: var(--padding-m);
+}
+
+#presentation .section-title h2 {
+  color: var(--color-element-label-primary);
+}
+
+.section-presentation {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  gap: var(--padding-m);
+}
+
+#presentation .screenshot-myreadsapp {
+  height: var(--media-height-m);
+}
+
+/* AUTHENTICATION SECTION */
+#authentication > div {
+  column-gap: var(--padding-m);
+  grid-template-columns: 1fr 2fr 1fr;
+  row-gap: var(--padding-m);
+  text-align: center;
+}
+
+#authentication .section-title {
+  grid-column: span 3;
+}
+
+#authentication .section-text {
+  gap: var(--padding-s);
+}
+
+/* API SECTION */
+#api {
+  background-color: var(--color-element-background-secondary);
+}
+
+#api > div {
+  column-gap: var(--padding-m);
+  grid-template-columns: 1fr 1fr 1.8fr;
+  row-gap: var(--padding-m);
+  text-align: center;
+}
+
+#api .section-title {
+  grid-column: span 3;
+}
+
+#api .section-text {
+  gap: var(--padding-s);
+}
+
+/* STORAGE SECTION */
+#storage > div {
+  column-gap: var(--padding-m);
+  grid-template-columns: 1fr 1fr;
+  row-gap: var(--padding-m);
+  text-align: center;
+}
+
+#storage .section-title {
+  grid-column: span 2;
+}
+
+#storage figure img {
+  height: var(--media-height-s);
+}
+
+#storage .section-choosestyle {
+  display: flex;
+  justify-content: center;
+  padding: var(--padding-m) 0;
+  font-weight: bold;
+  gap: var(--padding-s);
+  align-items: center;
+}
+
+#storage .icon-size {
+  height: var(--symbol-l);
+}
+
+/* ARCHITECTURE SECTION */
+#architecture {
+  background-color: var(--color-element-background-secondary);
+}
+
+#architecture > div {
+  column-gap: var(--padding-m);
+  grid-template-columns: 1fr;
+  row-gap: var(--padding-m);
+  text-align: center;
+}
+
+#architecture .section-title {
+  grid-column: span 2;
+}
+
+.mvvm {
+  grid-column: span 2;
+}
+
+#architecture img {
+  height: var(--media-height-xl);
+}
+
+#architecture .section-mvvm > figure img {
+  height: var(--media-height-l);
+}
+
+.section-mvvm {
+  grid-column: span 2;
+  display: grid;
+  column-gap: var(--padding-m);
+  grid-template-columns: 1fr 1fr;
+  row-gap: var(--padding-m);
+  text-align: center;
+}
+
+/* WHATS NEXT SECTION */
+#whatsnext {
+  padding-bottom: 0;
+}
+#whatsnext > div {
+  column-gap: var(--padding-m);
+  grid-template-columns: 1fr;
+  row-gap: var(--padding-m);
+  text-align: center;
+}
+
+#whatsnext .section-title {
+  grid-column: 1;
+}
+
+#whatsnext > div > .section-text {
+  grid-column: 1;
+}
+
+#whatsnext .resume {
+  margin: var(--padding-m) 0 0;
+}
+
+#whatsnext .btn-container {
+  padding: var(--padding-m) 0;
+}
+
+.section-whatsnext {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* @media screen and (min-width: 2560px) {
+  #presentation figure {
+    height: var(--media-height-xxl);
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  
+} */
+
+@media only screen and (max-width: 700px) {
+  .screenshot-myreadsapp {
+    height: var(--media-height-m);
+  }
+
+  #presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #presentation figure {
+    height: var(--media-height-s);
+  }
+
+  .section-title {
+    grid-column: 1;
+  }
+
+  /* Authentication section */
+  #authentication > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Api section */
+  #api > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Storage section */
+  #storage > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #storage figure img {
+    height: var(--media-height-m);
+  }
+
+  /* Architecture section */
+  #architecture > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--padding-s);
+  }
+
+  #architecture .section-mvvm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--padding-m);
+  }
+
+  /* #architecture > div .section-mvvm > figure:first-child {
+    display: none;
+  } */
+
+
+  
+
+ 
+
+  #architecture img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+
+
+  /* whats next section */
+  #whatsnext > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #whatsnext .section-whatsnext {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+  }
+
+  #whatsnext .screenshot-myreadsapp {
+    height: 100%;
+  }
+}
