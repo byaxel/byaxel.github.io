@@ -10,10 +10,15 @@
   object-fit: contain;
 }
 
+figure {
+  height: var(--media-height-s);
+}
+
 .section-text {
   display: flex;
   flex-direction: column;
-  margin: var(--padding-s) 0;
+  /* margin: var(--padding-s) 0; */
+  margin: auto 0;
 }
 
 body h3 {
@@ -99,9 +104,6 @@ body h3 {
   grid-column: span 2;
 }
 
-#storage figure img {
-  height: var(--media-height-s);
-}
 
 #storage .section-choosestyle {
   display: flex;
@@ -112,9 +114,7 @@ body h3 {
   align-items: center;
 }
 
-#storage .icon-size {
-  height: var(--symbol-l);
-}
+
 
 /* ARCHITECTURE SECTION */
 #architecture {
@@ -136,13 +136,7 @@ body h3 {
   grid-column: span 2;
 }
 
-#architecture img {
-  height: var(--media-height-xl);
-}
 
-#architecture .section-mvvm > figure img {
-  height: var(--media-height-l);
-}
 
 .section-mvvm {
   grid-column: span 2;
@@ -200,15 +194,31 @@ body h3 {
     height: var(--media-height-m);
   }
 
+  #presentation .screenshot-myreadsapp,
+  #authentication .screenshot-myreadsapp,
+  #architecture .screenshot-myreadsapp,
+  #api .screenshot-myreadsapp,
+  #whatsnext .screenshot-myreadsapp,
+  #storage .screenshot-myreadsapp {
+    height: 100%;
+  }
+
+  #presentation figure,
+  #authentication figure,
+  #architecture .screenshot-myreadsapp,
+  #api figure,
+  #whatsnext figure,
+  #storage figure {
+    height: var(--media-height-xs);
+  }
+
+
   #presentation {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  #presentation figure {
-    height: var(--media-height-s);
-  }
 
   .section-title {
     grid-column: 1;
@@ -236,7 +246,7 @@ body h3 {
   }
 
   #storage figure img {
-    height: var(--media-height-m);
+    height: var(--media-height-l);
   }
 
   /* Architecture section */

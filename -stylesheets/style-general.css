@@ -97,6 +97,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100dvh;
+  overflow-x: hidden;
 }
 
 
@@ -408,6 +409,10 @@ section > div {
 
   nav .icon {
     height: var(--symbol-xs);
+  }
+
+  nav a {
+    font-size: var(--font-size-m);
   }
   
   section {
