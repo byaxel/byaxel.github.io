@@ -12,8 +12,13 @@ if (currentTheme === "dark") {
 }
 
 // Add event listeners for theme toggle
-btn.addEventListener("click", setTheme);
-btn2.addEventListener("click", setTheme); // Añadido evento para el nuevo botón
+if (btn) {
+  btn.addEventListener("click", setTheme);
+}
+
+if (btn2) {
+  btn2.addEventListener("click", setTheme); // Añadido evento para el nuevo botón, si existe
+}
 
 // Function to toggle between light and dark themes
 function setTheme() {

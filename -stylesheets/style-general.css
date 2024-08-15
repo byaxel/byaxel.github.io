@@ -42,21 +42,20 @@
   --padding-l: 80px;
   --padding-xl: 100px;
 
+  --media-height-xxxs: 250px;
   --media-height-xxs: 300px;
-	--media-height-xs: 350px;
-	--media-height-s: 450px;
+  --media-height-xs: 350px;
+  --media-height-s: 450px;
   --media-height-m: 500px;
-	--media-height-l: 550px;
+  --media-height-l: 550px;
   --media-height-xl: 650px;
   --media-height-xxl: 1050px;
-
 
   --nav-height: 50px;
 
   --content-width-article: 600px;
   --content-width-normal: 1000px;
   --content-width-extra: 1400px;
-
 
   font-size: var(--font-size-m);
 }
@@ -86,7 +85,6 @@
 }
 
 html {
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -97,10 +95,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100dvh;
-  overflow-x: hidden;
 }
-
-
 
 /* FONTS */
 
@@ -147,7 +142,7 @@ a:hover {
   color: var(--color-element-label-secondary);
 }
 
-.text-bold{
+.text-bold {
   font-weight: bold;
 }
 
@@ -159,13 +154,11 @@ a,
 /* ICONS */
 .icon {
   cursor: pointer;
- 
 }
 
 .icon-size {
- height: var(--symbol-l);
+  height: var(--symbol-l);
 }
-
 
 /* BUTTONS */
 .btn-container {
@@ -265,7 +258,6 @@ nav .icon,
   pointer-events: visible;
 }
 
-
 /* FOOTER */
 footer {
   background-color: var(--color-element-background-secondary);
@@ -276,7 +268,6 @@ footer {
 .section-footer {
   cursor: default;
   width: min(100dvw - var(--padding-l), var(--content-width-normal));
-  
 }
 
 .directory {
@@ -304,25 +295,22 @@ footer .legal p {
   text-align: justify;
 }
 
-
 /* FIGURE */
 
 figure {
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	z-index: 1;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
 }
 
 figure img {
-	min-height: 100%;
-	min-width: 100%;
-	object-fit: cover;
-	transition: var(--transition-time);
-	user-select: none;
-	-webkit-user-select: none;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  transition: var(--transition-time);
+  user-select: none;
+  -webkit-user-select: none;
 }
-
 
 /* PICTURE */
 
@@ -333,26 +321,25 @@ picture {
   width: 100%;
 }
 
-
 /* IMG */
 
 figure img {
-	min-height: 100%;
-	min-width: 100%;
-	object-fit: cover;
-	transition: var(--transition-time);
-	user-select: none;
-	-webkit-user-select: none;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  transition: var(--transition-time);
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 img {
   pointer-events: none;
 }
 
-figure, picture {
+figure,
+picture {
   pointer-events: none;
 }
-
 
 /* SECTIONS */
 section {
@@ -375,22 +362,25 @@ section > div {
 }
 
 @media only screen and (max-width: 1000px) {
-
-	section {
-		padding: var(--padding-l) 0 var(--padding-l) 0;
-	}
-
+  section {
+    padding: var(--padding-l) 0 var(--padding-l) 0;
+  }
 }
 
-
-
-
 @media only screen and (max-width: 700px) {
+  :root {
+    font-size: var(--font-size-s);
+  }
 
-   :root {
-		font-size: var(--font-size-s);
-	 }
+  figure {
+    height: var(--media-height-xxs);
+  }
 
+  figure img {
+    height: 100%;
+    object-fit: contain;
+
+  }
 
   footer .directory {
     column-gap: var(--padding-s);
@@ -400,11 +390,10 @@ section > div {
   nav > div {
     column-gap: var(--padding-s);
     grid-template-columns: repeat(2, auto);
-    
   }
 
   nav div .logo-container {
-      display: none;
+    display: none;
   }
 
   nav .icon {
@@ -414,14 +403,14 @@ section > div {
   nav a {
     font-size: var(--font-size-m);
   }
-  
+
   section {
     padding: var(--padding-l) 0 var(--padding-l) 0;
   }
 
   section > div {
-		width: min(100dvw - var(--padding-m), var(--content-width-normal));
-	}
+    width: min(100dvw - var(--padding-m), var(--content-width-normal));
+  }
 
   h1 {
     font-size: 2.5rem;
@@ -431,29 +420,27 @@ section > div {
     font-size: var(--font-size-m);
   }
 
-
   /* Hero section */
 
   #hero {
     min-height: calc(100dvh - var(--nav-height) - 2 * var(--padding-l));
-
   }
 
   #hero > div {
     grid-template-columns: auto;
     row-gap: var(--padding-m);
     align-items: start;
-	}
+  }
 
   #hero figure img {
-		height: var(--hero-image-max-width);
-	}
+    object-fit: contain;
+    height: 100%;
+  }
 
-
-   /* About section */
+  /* About section */
   #about > div {
     grid-template-columns: auto;
-    grid-template-rows: auto ;
+    grid-template-rows: auto;
     row-gap: var(--padding-m);
     align-items: center;
     justify-items: center;
@@ -465,30 +452,32 @@ section > div {
     grid-column: 1;
   }
 
-  #about figure {
-    height: var(--media-height-xxs);
-    width: var(--media-height-xxs);
-  }
+  /* Projects section */
 
-   /* Projects section */
-
-   #projects > div {
+  #projects > div {
     grid-template-columns: auto;
-    grid-template-rows: auto ;
+    grid-template-rows: auto;
     row-gap: var(--padding-m);
     justify-content: center;
   }
 
-  #projects img {
-    height: var(--media-height-xxs);
+  #projects figure {
+    height: var(--media-height-xxxs);
   }
 
+  #projects img {
+    height: 100%;
+  }
+
+  .section-text-project {
+    padding: 0 var(--padding-xs);
+  }
 
   /* Contact section */
 
   #contact > div {
     grid-template-columns: auto;
-    grid-template-rows: auto ;
+    grid-template-rows: auto;
     row-gap: var(--padding-m);
     justify-content: center;
   }
@@ -498,6 +487,4 @@ section > div {
     align-items: start;
     gap: var(--padding-s);
   }
-
-
 }

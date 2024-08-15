@@ -99,7 +99,6 @@
   gap: var(--padding-m);
   align-items: center;
   justify-content: center;
-
   border-style: solid;
   border: var(--color-element-border-primary);
   border-radius: 2rem;
