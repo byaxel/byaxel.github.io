@@ -132,6 +132,7 @@ picture {
   #about figure,
   #about picture {
     height: var(--media-height-xxxs);
+    width: var(--media-height-xxxs);
   }
 
   /* Projects section */
