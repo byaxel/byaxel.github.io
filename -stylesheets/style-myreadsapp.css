@@ -1,15 +1,7 @@
 /* SECTIONS */
 @import url("style-general.css");
 
-/* GENERAL */
-/* .screenshot-myreadsapp {
-  height: 100%;
-  min-height: initial;
-  min-width: initial;
-  width: 100%;
-  object-fit: contain;
-} */
-
+/* General */
 figure,
 picture {
   height: var(--media-height-s);
@@ -25,7 +17,7 @@ body h3 {
   font-weight: var(--font-weight-l);
 }
 
-/* PRESENTATION SECTION */
+/* Presentation section */
 #presentation {
   background-color: var(--color-element-background-secondary);
   padding-bottom: 0;
@@ -57,10 +49,11 @@ body h3 {
   gap: var(--padding-m);
 }
 
-/* AUTHENTICATION SECTION */
+/* Authentication section */
 #authentication {
-  padding-top: var(--padding-l);
+  padding-top: var(--padding-xl);
 }
+
 #authentication > div {
   column-gap: var(--padding-m);
   grid-template-columns: 1fr 2fr 1fr;
@@ -76,7 +69,7 @@ body h3 {
   gap: var(--padding-s);
 }
 
-/* API SECTION */
+/* API section */
 #api {
   background-color: var(--color-element-background-secondary);
 }
@@ -102,7 +95,7 @@ body h3 {
   gap: var(--padding-s);
 }
 
-/* STORAGE SECTION */
+/* Storage section */
 #storage > div {
   column-gap: var(--padding-l);
   grid-template-columns: 1fr 1fr;
@@ -136,7 +129,7 @@ body h3 {
   pointer-events: visible;
 }
 
-/* ARCHITECTURE SECTION */
+/* Architecture section */
 #architecture {
   background-color: var(--color-element-background-secondary);
 }
@@ -168,12 +161,7 @@ body h3 {
   row-gap: var(--padding-m);
 }
 
-/* #architecture .mvvm > picture,
-#architecture .mvvm > figure {
-  height: var(--media-height-l)
-} */
-
-/* WHATS NEXT SECTION */
+/* Whatsnext section */
 #whatsnext {
   padding-bottom: 0;
 }
@@ -184,11 +172,6 @@ body h3 {
   row-gap: var(--padding-m);
   text-align: center;
 }
-
-/* #whatsnext figure,
-#whatsnext picture {
-  height: var(--media-height-xs);
-} */
 
 #whatsnext .resume {
   margin: var(--padding-m) 0 0;
@@ -209,64 +192,182 @@ body h3 {
   margin-top: auto;
 }
 
+/* Mediaqueries */
 
-
-
-
-
-
-
-
-
+/* Screen min 2560px */
 @media screen and (min-width: 2560px) {
+  /* Presentation section */
   #presentation picture,
   #presentation figure {
     height: var(--media-height-xxxl);
   }
 
-  section {
-    padding: var(--padding-xl) 0 var(--padding-xl) 0;
+  #presentation figure {
+    margin-top: 4rem;
+  }
+
+  #architecture figure,
+  #architecture picture {
+    height: var(--media-height-xs);
+  }
+
+  /* Authentication section */
+  #authentication figure,
+  #authentication picture {
+    height: var(--media-height-m);
+  }
+
+  /* API section */
+  #api figure,
+  #api picture {
+    height: var(--media-height-s);
+  }
+
+  /* Storage section */
+  #storage figure,
+  #storage picture {
+    height: var(--media-height-m);
+  }
+
+  /* Storage section */
+  #architecture figure,
+  #architecture picture {
+    height: var(--media-height-xl);
   }
 }
 
+/* Screen min 1441px max 1920px */
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* Presentation section */
+  #presentation picture,
+  #presentation figure {
+    height: var(--media-height-xl);
+  }
 
+  /* Authentication section */
+  #authentication figure,
+  #authentication picture {
+    height: var(--media-height-s);
+  }
 
+  /* API section */
+  #api figure,
+  #api picture {
+    height: var(--media-height-s);
+  }
 
+  /* Storage section */
+  #storage figure,
+  #storage picture {
+    height: var(--media-height-s);
+  }
 
+  /* Storage section */
+  #architecture figure,
+  #architecture picture {
+    height: var(--media-height-xl);
+  }
+
+  #whatsnext figure,
+  #whatsnext picture {
+    height: var(--media-height-s);
+  }
+}
+
+/* Screen max 850px */
+@media only screen and (max-width: 850px) {
+  #architecture > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .section-repo-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #whatsnext figure,
+  #whatsnext picture {
+    height: var(--media-height-xs);
+  }
+
+  /* Whatsnext section */
+  .section-whatsnext {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #whatsnext .resume {
+    margin-top: 0;
+  }
+}
+
+/* Screen max 700px */
 @media only screen and (max-width: 700px) {
+  /* General */
   figure,
   picture {
     height: var(--media-height-xxs);
   }
 
+  /* Presentation section */
   #presentation picture,
   #presentation figure {
     height: var(--media-height-xs);
+  }
+
+  #presentation figure {
+    margin-top: 2rem;
   }
 
   #presentation {
     overflow: hidden;
   }
 
+  /* Authentication section */
+  #authentication figure,
+  #authentication picture {
+    height: var(--media-height-xs);
+  }
 
+  /* Api section */
+  #api > div {
+    row-gap: var(--padding-s);
+  }
+  #api figure,
+  #api picture {
+    height: var(--media-height-xs);
+  }
 
+  /* Storage section */
+  #storage figure,
+  #storage picture {
+    height: var(--media-height-xs);
+  }
+
+  /* Architecture section */
   #architecture figure,
-#architecture picture {
-  height: var(--media-height-s);
-}
+  #architecture picture {
+    height: var(--media-height-xs);
+  }
 
-.section-repo-data {
-  display: flex;
-  flex-direction: column;
-}
+  .section-architecture {
+    margin-top: 0;
+  }
 
-.section-whatsnext {
-  display: flex;
-  flex-direction: column-reverse;
-}
+  .section-repo-data {
+    display: flex;
+    flex-direction: column;
+  }
 
-#whatsnext .resume {
-  margin-top: 0;
-}
-
+  #whatsnext figure,
+  #whatsnext picture {
+    height: var(--media-height-xxs);
+  }
 }

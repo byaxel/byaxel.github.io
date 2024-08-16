@@ -1,8 +1,6 @@
-/* SECTIONS */
-@import url("style-general.css");
-
-/* HOME GENERAL */
-figure, picture {
+/* General */
+figure,
+picture {
   height: var(--media-height-s);
 }
 
@@ -10,8 +8,7 @@ figure, picture {
   margin: auto 0;
 }
 
-
-/* HERO SECTION */
+/* Hero section */
 #hero {
   min-height: calc(100dvh - var(--nav-height) - 2 * var(--padding-l));
 }
@@ -42,7 +39,7 @@ figure, picture {
   width: calc(100%);
 }
 
-/* ABOUT SECTION */
+/* About section */
 #about {
   background: var(--color-element-background-secondary);
 }
@@ -56,7 +53,6 @@ figure, picture {
 
 #about .section-title {
   grid-column: span 2;
-  /* white-space: nowrap; */
 }
 
 #about picture {
@@ -72,10 +68,7 @@ figure, picture {
   text-align: start;
 }
 
-
-
-
-/* PROJECTS SECTION */
+/* Projects section */
 #projects > div {
   column-gap: var(--padding-m);
   grid-template-columns: 1fr;
@@ -91,10 +84,7 @@ figure, picture {
   text-align: center;
 }
 
-
-
-
-/* CONTACT SECTION */
+/* Contact section */
 #contact > div {
   column-gap: var(--padding-m);
   grid-template-columns: 1fr;
@@ -124,28 +114,37 @@ figure, picture {
   margin: 1rem;
 }
 
+/* Mediaqueries */
 
-
-
+/* Screen max 700px */
 @media only screen and (max-width: 700px) {
-/* Hero section */
-#hero {
-  min-height: calc(100dvh - var(--nav-height) - 2 * var(--padding-l));
-}
+  /* Hero section */
+  #hero figure,
+  #hero picture {
+    height: var(--media-height-xxxs);
+  }
 
-/* Projects section */
-#projects figure,
-#projects picture {
-  height: 200px;
-}
+  #hero {
+    min-height: calc(100dvh - var(--nav-height) - 2 * var(--padding-l));
+  }
 
-/* Contact section */
-#contact .section-contact {
-  flex-direction: column;
-  align-items: start;
-  gap: var(--padding-s);
-  margin: calc(var(--padding-l) * 1.5) auto;
-}
+  /* About section */
+  #about figure,
+  #about picture {
+    height: var(--media-height-xxxs);
+  }
 
+  /* Projects section */
+  #projects figure,
+  #projects picture {
+    height: 200px;
+  }
 
+  /* Contact section */
+  #contact .section-contact {
+    flex-direction: column;
+    align-items: start;
+    gap: var(--padding-s);
+    margin: calc(var(--padding-l) * 1.5) auto;
+  }
 }
