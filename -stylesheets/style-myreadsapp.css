@@ -2,22 +2,22 @@
 @import url("style-general.css");
 
 /* GENERAL */
-.screenshot-myreadsapp {
+/* .screenshot-myreadsapp {
   height: 100%;
   min-height: initial;
   min-width: initial;
   width: 100%;
   object-fit: contain;
-}
+} */
 
-figure {
+figure,
+picture {
   height: var(--media-height-s);
 }
 
 .section-text {
   display: flex;
   flex-direction: column;
-  /* margin: var(--padding-s) 0; */
   margin: auto 0;
 }
 
@@ -33,6 +33,11 @@ body h3 {
 
 #presentation {
   padding-top: var(--padding-m);
+}
+
+#presentation picture,
+#presentation figure {
+  height: var(--media-height-m);
 }
 
 #presentation > div {
@@ -52,11 +57,10 @@ body h3 {
   gap: var(--padding-m);
 }
 
-#presentation .screenshot-myreadsapp {
-  height: var(--media-height-m);
-}
-
 /* AUTHENTICATION SECTION */
+#authentication {
+  padding-top: var(--padding-l);
+}
 #authentication > div {
   column-gap: var(--padding-m);
   grid-template-columns: 1fr 2fr 1fr;
@@ -79,9 +83,15 @@ body h3 {
 
 #api > div {
   column-gap: var(--padding-m);
-  grid-template-columns: 1fr 1fr 1.8fr;
+  grid-template-columns: 2fr 1.5fr;
   row-gap: var(--padding-m);
   text-align: center;
+}
+
+.section-api {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #api .section-title {
@@ -94,7 +104,7 @@ body h3 {
 
 /* STORAGE SECTION */
 #storage > div {
-  column-gap: var(--padding-m);
+  column-gap: var(--padding-l);
   grid-template-columns: 1fr 1fr;
   row-gap: var(--padding-m);
   text-align: center;
@@ -104,17 +114,27 @@ body h3 {
   grid-column: span 2;
 }
 
+.section-storage {
+  display: flex;
+  flex-direction: column;
+}
+
+#storage .section-text {
+  margin: var(--padding-s) 0 0;
+}
 
 #storage .section-choosestyle {
   display: flex;
   justify-content: center;
-  padding: var(--padding-m) 0;
+  padding: var(--padding-s) 0;
   font-weight: bold;
   gap: var(--padding-s);
   align-items: center;
 }
 
-
+.section-choosestyle img {
+  pointer-events: visible;
+}
 
 /* ARCHITECTURE SECTION */
 #architecture {
@@ -128,28 +148,36 @@ body h3 {
   text-align: center;
 }
 
-#architecture .section-title {
-  grid-column: span 2;
+.section-architecture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--padding-xs);
+  margin-top: var(--padding-s);
 }
 
-.mvvm {
-  grid-column: span 2;
+#architecture figure,
+#architecture picture {
+  height: var(--media-height-xl);
 }
 
-
-.section-mvvm {
-  grid-column: span 2;
+.section-repo-data {
   display: grid;
   column-gap: var(--padding-m);
   grid-template-columns: 1fr 1fr;
   row-gap: var(--padding-m);
-  text-align: center;
 }
+
+/* #architecture .mvvm > picture,
+#architecture .mvvm > figure {
+  height: var(--media-height-l)
+} */
 
 /* WHATS NEXT SECTION */
 #whatsnext {
   padding-bottom: 0;
 }
+
 #whatsnext > div {
   column-gap: var(--padding-m);
   grid-template-columns: 1fr;
@@ -157,13 +185,10 @@ body h3 {
   text-align: center;
 }
 
-#whatsnext .section-title {
-  grid-column: 1;
-}
-
-#whatsnext > div > .section-text {
-  grid-column: 1;
-}
+/* #whatsnext figure,
+#whatsnext picture {
+  height: var(--media-height-xs);
+} */
 
 #whatsnext .resume {
   margin: var(--padding-m) 0 0;
@@ -175,124 +200,73 @@ body h3 {
 
 .section-whatsnext {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
+  margin: auto 0;
 }
 
-/* @media screen and (min-width: 2560px) {
+.section-whatsnext img {
+  object-fit: contain;
+  margin-top: auto;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 2560px) {
+  #presentation picture,
   #presentation figure {
-    height: var(--media-height-xxl);
-    margin-bottom: 0;
-    padding-bottom: 0;
+    height: var(--media-height-xxxl);
   }
 
-  
-} */
+  section {
+    padding: var(--padding-xl) 0 var(--padding-xl) 0;
+  }
+}
+
+
+
+
 
 @media only screen and (max-width: 700px) {
-  .screenshot-myreadsapp {
-    height: var(--media-height-m);
+  figure,
+  picture {
+    height: var(--media-height-xxs);
   }
 
-  #presentation .screenshot-myreadsapp,
-  #authentication .screenshot-myreadsapp,
-  #architecture .screenshot-myreadsapp,
-  #api .screenshot-myreadsapp,
-  #whatsnext .screenshot-myreadsapp,
-  #storage .screenshot-myreadsapp {
-    height: 100%;
-  }
-
-  #presentation figure,
-  #authentication figure,
-  #architecture .screenshot-myreadsapp,
-  #api figure,
-  #whatsnext figure,
-  #storage figure {
+  #presentation picture,
+  #presentation figure {
     height: var(--media-height-xs);
   }
 
-
   #presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-  .section-title {
-    grid-column: 1;
-  }
-
-  /* Authentication section */
-  #authentication > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Api section */
-  #api > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Storage section */
-  #storage > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #storage figure img {
-    height: var(--media-height-l);
-  }
-
-  /* Architecture section */
-  #architecture > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--padding-s);
-  }
-
-  #architecture .section-mvvm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--padding-m);
-  }
-
-  /* #architecture > div .section-mvvm > figure:first-child {
-    display: none;
-  } */
-
-
-  
-
- 
-
-  #architecture img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    overflow: hidden;
   }
 
 
 
-  /* whats next section */
-  #whatsnext > div {
-    display: flex;
-    flex-direction: column;
-  }
+  #architecture figure,
+#architecture picture {
+  height: var(--media-height-s);
+}
 
-  #whatsnext .section-whatsnext {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 0;
-  }
+.section-repo-data {
+  display: flex;
+  flex-direction: column;
+}
 
-  #whatsnext .screenshot-myreadsapp {
-    height: 100%;
-  }
+.section-whatsnext {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#whatsnext .resume {
+  margin-top: 0;
+}
+
 }
