@@ -100,7 +100,6 @@ body {
 }
 
 /* Fonts */
-
 h1 {
   font-size: 3rem;
   font-weight: var(--font-weight-l);
@@ -355,6 +354,10 @@ section > div {
   }
 
   section > div {
+    width: min(100dvw - var(--padding-l), var(--content-width-extra));
+  }
+
+  nav > div {
     width: min(100dvw - var(--padding-l), var(--content-width-extra));
   }
 }

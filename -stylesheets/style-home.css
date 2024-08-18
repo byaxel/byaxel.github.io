@@ -51,6 +51,12 @@ picture {
   text-align: center;
 }
 
+#about figure,
+#abput picture {
+  height: var(--media-height-s);
+  width: var(--media-height-s);
+}
+
 #about .section-title {
   grid-column: span 2;
 }
@@ -115,6 +121,25 @@ picture {
 }
 
 /* Mediaqueries */
+
+@media screen and (min-width: 2560px) {
+
+  /* #about figure,
+#abput picture {
+  height: var(--media-height-xxl);
+  width: var(--media-height-xxl);
+} */
+
+/* #about > div {
+  column-gap: var(--padding-xl);
+} */
+
+#about figure {
+  /* margin-left: auto; */
+
+  margin-inline: auto;
+}
+}
 
 /* Screen max 700px */
 @media only screen and (max-width: 700px) {
