@@ -39,6 +39,10 @@ picture {
   width: calc(100%);
 }
 
+#socials-container img {
+  pointer-events: visible;
+}
+
 /* About section */
 #about {
   background: var(--color-element-background-secondary);
