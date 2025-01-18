@@ -1,4 +1,3 @@
-
 // Script de Google Analytics
 (function() {
     var script = document.createElement('script');
@@ -15,4 +14,4 @@
         'anonymize_ip': true
       });
     }
-  })();
+})();
