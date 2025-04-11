@@ -1,29 +1,28 @@
-// Dark / light mode
+// Get references to theme toggle buttons and icons from the DOM
 const btn = document.getElementById("modeToggle");
-const btn2 = document.getElementById("modeToggle2"); // Nuevo botón para alternar el tema
+const btn2 = document.getElementById("modeToggle2");
 const themeIcons = document.querySelectorAll(".icon");
 const currentTheme = localStorage.getItem("theme");
 
-// Set the initial theme based on localStorage
+// Set the initial theme based on saved preference in localStorage
 if (currentTheme === "dark") {
   setDarkMode();
 } else {
   setLightMode();
 }
 
-// Add event listeners for theme toggle
+// Add click event listeners to toggle buttons for switching themes
 if (btn) {
   btn.addEventListener("click", setTheme);
 }
 
 if (btn2) {
-  btn2.addEventListener("click", setTheme); // Añadido evento para el nuevo botón, si existe
+  btn2.addEventListener("click", setTheme);
 }
 
-// Function to toggle between light and dark themes
+// Toggle the current theme between light and dark
 function setTheme() {
   const currentTheme = document.body.getAttribute("theme");
-  
   if (currentTheme === "dark") {
     setLightMode();
   } else {
@@ -31,38 +30,33 @@ function setTheme() {
   }
 }
 
-// Function to set dark mode
+// Apply dark theme and update images/icons accordingly
 function setDarkMode() {
   document.body.setAttribute("theme", "dark");
   localStorage.setItem("theme", "dark");
-
-  // Update images inside <picture> and simple images
   updateImages('dark');
 }
 
-// Function to set light mode
+// Apply light theme and update images/icons accordingly
 function setLightMode() {
   document.body.removeAttribute("theme");
   localStorage.setItem("theme", "light");
-
-  // Update images inside <picture> and simple images
   updateImages('light');
 }
 
-// Function to update images
+// Update all theme-dependent images and icons
 function updateImages(mode) {
   themeIcons.forEach((icon) => {
     const picture = icon.closest('picture');
     if (picture) {
-      // Update sources for <picture> elements
       updatePictureSources(picture, mode);
     } else {
-      // Update src for simple images
       icon.src = icon.getAttribute(`src-${mode}`);
     }
   });
 }
 
+// Update <picture> element sources for theme-specific images
 function updatePictureSources(picture, mode) {
   picture.querySelectorAll('source').forEach((source) => {
     const srcLight = source.getAttribute('src-light');
@@ -85,3 +79,15 @@ function updatePictureSources(picture, mode) {
     }
   }
 }
+
+// Render obfuscated email in contact section to protect against bots 
+window.addEventListener("DOMContentLoaded", () => {
+  const emailContainer = document.getElementById("email");
+
+  if (emailContainer) {
+    const user = "hi";
+    const domain = "byaxel.dev";
+    const email = `${user}@${domain}`;
+    emailContainer.innerHTML = `<a href="mailto:${email}">${email}</a>`;
+  }
+});
